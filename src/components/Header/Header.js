@@ -1,27 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import img from "../../images/quiz.jpg";
+import Home from "../Home/Home";
 const Header = () => {
   return (
     <div>
-      <div className="navbar bg-slate-400">
-        <div className="flex-1 ml-10 pl-10 text-3xl font-semibold">
-          <p>Chase Your Brain</p>
+      <div className="flex lg:flex-row flex-col">
+        <div className="w-screen lg:w-1/2 m-0">
+          <img src={img} alt="" />
         </div>
-        <div className="flex-none ">
-          <Link className="mr-10 text-xl font-semibold" to="/home">
-            Home
-          </Link>
-          <Link className="mr-10 text-xl font-semibold" to="/tropic">
-            Tropic
-          </Link>
-          <Link className="mr-10 text-xl font-semibold" to="/static">
-            Statics
-          </Link>
-          <Link className="mr-10 text-xl font-semibold" to="/blog">
-            Blog
-          </Link>
+        <div className="lg:w-1/2 mt-10 flex text-center items-center justify-center">
+          <div>
+            <h2 className="lg:text-5xl text-2xl">
+              Wellcome to Chase Your Brain
+            </h2>
+            <p className="lg:text-2xl">
+              Here you can train your brain into next level
+            </p>
+          </div>
         </div>
+      </div>
+      <div className="mt-10">
+        <Home></Home>
       </div>
     </div>
   );

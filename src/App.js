@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import Tropic from "./components/Tropic/Tropic";
 import Static from "./components/Static/Static";
 import Blog from "./components/Blog/Blog";
+import Header from "./components/Header/Header";
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,8 @@ const router = createBrowserRouter([
     errorElement: <Error></Error>,
     children: [
       {
-        path: "home",
-        element: <Home></Home>,
+        path: "/",
+        element: <Header></Header>,
       },
       {
         path: "tropic",
