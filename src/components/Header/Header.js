@@ -6,7 +6,7 @@ import Tropic from "../Tropic/Tropic";
 const Header = () => {
   const loaderData = useLoaderData();
   const tropics = loaderData.data;
-  // console.log(quizs);
+  console.log(tropics);
   return (
     <div>
       <div className="flex lg:flex-row flex-col">
@@ -24,7 +24,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10">
+      <div className="mt-20 grid lg:grid-cols-2 lg:gap-10 justify-items-center">
         {tropics.map((tropic) => (
           <Tropic key={tropic.id} tropic={tropic}></Tropic>
         ))}
