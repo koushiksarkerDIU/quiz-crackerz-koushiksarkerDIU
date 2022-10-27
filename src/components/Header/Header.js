@@ -1,7 +1,12 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
 import img from "../../images/quiz.jpg";
-import Home from "../Home/Home";
+import Tropic from "../Tropic/Tropic";
+
 const Header = () => {
+  const loaderData = useLoaderData();
+  const tropics = loaderData.data;
+  // console.log(quizs);
   return (
     <div>
       <div className="flex lg:flex-row flex-col">
@@ -20,7 +25,9 @@ const Header = () => {
         </div>
       </div>
       <div className="mt-10">
-        <Home></Home>
+        {tropics.map((tropic) => (
+          <Tropic key={tropic.id} tropic={tropic}></Tropic>
+        ))}
       </div>
     </div>
   );
