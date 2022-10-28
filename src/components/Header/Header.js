@@ -5,8 +5,8 @@ import Tropic from "../Tropic/Tropic";
 
 const Header = () => {
   const loaderData = useLoaderData();
-  const tropics = loaderData.data;
-  console.log(tropics);
+  const tropics = loaderData?.data;
+  // console.log(tropics);
   return (
     <div>
       <div className="flex lg:flex-row flex-col">

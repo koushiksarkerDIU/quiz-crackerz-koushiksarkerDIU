@@ -31,11 +31,11 @@ const NavBar = () => {
                 <Link className="text-base font-semibold" to="/">
                   Home
                 </Link>
-                <Link className="text-base font-semibold" to="/tropic">
-                  Tropic
+                <Link className="text-base font-semibold" to="/tropics">
+                  Tropics
                 </Link>
                 <Link className="text-base font-semibold" to="/static">
-                  Statics
+                  Static
                 </Link>
                 <Link className="text-base font-semibold" to="/blog">
                   Blog
@@ -52,11 +52,11 @@ const NavBar = () => {
             <Link className="mr-10 text-xl font-semibold" to="/">
               Home
             </Link>
-            <Link className="mr-10 text-xl font-semibold" to="/tropic">
-              Tropic
+            <Link className="mr-10 text-xl font-semibold" to="/tropics">
+              Tropics
             </Link>
             <Link className="mr-10 text-xl font-semibold" to="/static">
-              Statics
+              Static
             </Link>
             <Link className="mr-10 text-xl font-semibold" to="/blog">
               Blog
