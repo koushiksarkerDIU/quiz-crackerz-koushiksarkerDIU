@@ -1,7 +1,7 @@
 import { faBrain } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -30,18 +30,18 @@ const NavBar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <ul className="menu menu-vertical p-0">
-                <Link className="text-base font-semibold" to="/">
+                <NavLink className="text-base font-semibold" to="/">
                   Home
-                </Link>
-                <Link className="text-base font-semibold" to="/tropics">
+                </NavLink>
+                <NavLink className="text-base font-semibold" to="/tropics">
                   Tropics
-                </Link>
-                <Link className="text-base font-semibold" to="/static">
+                </NavLink>
+                <NavLink className="text-base font-semibold" to="/static">
                   Static
-                </Link>
-                <Link className="text-base font-semibold" to="/blog">
+                </NavLink>
+                <NavLink className="text-base font-semibold" to="/blog">
                   Blog
-                </Link>
+                </NavLink>
               </ul>
             </ul>
           </div>
@@ -54,18 +54,18 @@ const NavBar = () => {
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
-            <Link className="mr-10 text-xl font-semibold" to="/">
+            <NavLink className="mr-10 text-xl font-semibold" to="/">
               Home
-            </Link>
-            <Link className="mr-10 text-xl font-semibold" to="/tropics">
+            </NavLink>
+            <NavLink className="mr-10 text-xl font-semibold" to="/tropics">
               Tropics
-            </Link>
-            <Link className="mr-10 text-xl font-semibold" to="/static">
+            </NavLink>
+            <NavLink className="mr-10 text-xl font-semibold" to="/static">
               Static
-            </Link>
-            <Link className="mr-10 text-xl font-semibold" to="/blog">
+            </NavLink>
+            <NavLink className="mr-10 text-xl font-semibold" to="/blog">
               Blog
-            </Link>
+            </NavLink>
           </ul>
         </div>
       </div>
