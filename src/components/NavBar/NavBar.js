@@ -1,3 +1,5 @@
+import { faBrain } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -43,7 +45,10 @@ const NavBar = () => {
               </ul>
             </ul>
           </div>
-          <p className="text-xl mx-auto lg:ml-10 text-center font-semibold">
+          <p className="text-2xl mx-auto lg:ml-10 text-center font-semibold">
+            <span className="m-1">
+              <FontAwesomeIcon icon={faBrain}></FontAwesomeIcon>
+            </span>
             Chase Your Brain
           </p>
         </div>
