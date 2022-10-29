@@ -15,7 +15,7 @@ const Question = (props) => {
   };
 
   return (
-    <div className="rounded-lg p-5 mb-20 w-3/5 shadow-xl">
+    <div className="rounded-lg p-5 mb-20 w-3/5 shadow">
       <div className="flex justify-between">
         <h2>Quiz :{question}</h2>
         <button onClick={() => handleCorrectAns(correctAnswer)}>
