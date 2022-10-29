@@ -9,7 +9,7 @@ const Quizzes = () => {
   const { name, questions, total } = quiz;
   return (
     <div>
-      <h1 className="my-5 text-3xl font-bold italic">Quiz of : {name} </h1>
+      <h1 className="my-5 text-2xl font-bold italic">Quiz of : {name} </h1>
       <h1 className="my-5 text-xl font-bold italic">Total Quiz : {total} </h1>
 
       <div className="grid justify-items-center">

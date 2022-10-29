@@ -15,10 +15,10 @@ const Static = () => {
   const tropics = loaderData?.data;
   // console.log(tropics);
   return (
-    <div className="container mt-10 pt-6">
+    <div className="mt-10 pt-6 ">
       <BarChart
-        className="w-1/2 mx-auto"
-        width={500}
+        className="mx-auto"
+        width={360}
         height={300}
         data={tropics}
         margin={{

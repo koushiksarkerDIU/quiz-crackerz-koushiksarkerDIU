@@ -45,7 +45,7 @@ const NavBar = () => {
               </ul>
             </ul>
           </div>
-          <p className="text-2xl mx-auto lg:ml-10 text-center font-semibold">
+          <p className="text-3xl mx-auto lg:ml-10 text-center font-semibold">
             <span className="m-1">
               <FontAwesomeIcon icon={faBrain}></FontAwesomeIcon>
             </span>

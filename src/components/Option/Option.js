@@ -13,9 +13,9 @@ const Option = ({ option, correctAnswer }) => {
     }
   };
   return (
-    <div className="w-3/4 m-2 p-3 option">
+    <div className="w-3/4 m-2 option">
       <button
-        className="w-full h-full"
+        className="w-full h-full p-3"
         onClick={() => handleCorrectAns(option)}
       >
         {option}

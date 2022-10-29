@@ -14,14 +14,16 @@ const Question = (props) => {
   };
 
   return (
-    <div className="rounded-lg p-5 mb-20 w-3/5 shadow">
-      <div className="flex justify-around">
-        <h2 className="text-xl font-semibold italic w-3/4">Quiz :{question}</h2>
+    <div className="rounded-lg py-5 my-10 lg:w-3/5 shadow ">
+      <div className="flex justify-between m-2">
+        <h2 className="lg:text-xl text-lg font-semibold italic lg:w-3/4 mr-1">
+          Quiz :{question}
+        </h2>
         <button onClick={() => handleShowCorrectAns(correctAnswer)}>
-          <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+          <FontAwesomeIcon className="m-1" icon={faEye}></FontAwesomeIcon>
         </button>
       </div>
-      <div className="grid grid-cols-2 justify-items-center justify-center p-2">
+      <div className="grid lg:grid-cols-2 justify-items-center justify-center p-2">
         {options.map((option, i) => (
           <Option
             key={i}
