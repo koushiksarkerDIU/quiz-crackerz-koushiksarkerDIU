@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Static from "../Static/Static";
 
 const Tropic = ({ tropic }) => {
   const { name, logo, total, id } = tropic;
@@ -15,6 +16,7 @@ const Tropic = ({ tropic }) => {
             <Link to={`/quiz/${id}`}>
               <button className="btn btn-outline">Lets Start </button>
             </Link>
+            <Static quizTotal={total}></Static>
           </div>
         </div>
       </div>
