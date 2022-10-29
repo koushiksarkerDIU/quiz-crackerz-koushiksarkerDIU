@@ -35,7 +35,7 @@ const Static = () => {
         <Legend />
         <Bar dataKey="total" fill="#8884d8" />
       </BarChart>
-      <h2> Total number of quiz</h2>
+      <h2 className="text-xl font-semibold"> Total number of quiz</h2>
     </div>
   );
 };

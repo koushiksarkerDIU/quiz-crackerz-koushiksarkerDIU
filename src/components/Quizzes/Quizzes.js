@@ -6,7 +6,7 @@ const Quizzes = () => {
   const loader = useLoaderData();
   const quiz = loader.data;
   // console.log(quiz);
-  const { logo, name, questions } = quiz;
+  const { name, questions } = quiz;
   return (
     <div>
       <h1>Quiz of {name} </h1>

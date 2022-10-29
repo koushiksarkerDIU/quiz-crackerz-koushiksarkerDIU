@@ -16,7 +16,6 @@ const Tropic = ({ tropic }) => {
             <Link to={`/quiz/${id}`}>
               <button className="btn btn-outline">Lets Start </button>
             </Link>
-            <Static quizTotal={total}></Static>
           </div>
         </div>
       </div>
