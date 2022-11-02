@@ -1,12 +1,10 @@
-import React from "react";
-import { useLoaderData } from "react-router-dom";
+import React, { useContext } from "react";
 import img from "../../images/quiz.jpg";
+import { TropicContext } from "../Layout/Main";
 import Tropic from "../Tropic/Tropic";
 
 const Header = () => {
-  const loaderData = useLoaderData();
-  const tropics = loaderData?.data;
-  // console.log(tropics);
+  const tropics = useContext(TropicContext);
   return (
     <div>
       <div className="flex lg:flex-row flex-col">

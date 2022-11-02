@@ -1,13 +1,15 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React, { createContext } from "react";
+import { Outlet, useLoaderData } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
+export const TropicContext = createContext([]);
 
 const Main = () => {
+  const tropics = useLoaderData().data;
   return (
-    <div>
+    <TropicContext.Provider value={tropics}>
       <NavBar></NavBar>
       <Outlet></Outlet>
-    </div>
+    </TropicContext.Provider>
   );
 };
 

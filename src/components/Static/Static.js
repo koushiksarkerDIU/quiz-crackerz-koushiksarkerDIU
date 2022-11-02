@@ -1,5 +1,4 @@
-import React from "react";
-import { useLoaderData } from "react-router-dom";
+import React, { useContext } from "react";
 import {
   XAxis,
   YAxis,
@@ -9,11 +8,10 @@ import {
   BarChart,
   Bar,
 } from "recharts";
+import { TropicContext } from "../Layout/Main";
 
 const Static = () => {
-  const loaderData = useLoaderData();
-  const tropics = loaderData?.data;
-  // console.log(tropics);
+  const tropics = useContext(TropicContext);
   return (
     <div className="mt-10 pt-6 ">
       <BarChart

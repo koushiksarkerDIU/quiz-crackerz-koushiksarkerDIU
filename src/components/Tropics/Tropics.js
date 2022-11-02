@@ -1,10 +1,9 @@
-import React from "react";
-import { useLoaderData } from "react-router-dom";
+import React, { useContext } from "react";
+import { TropicContext } from "../Layout/Main";
 import Tropic from "../Tropic/Tropic";
 
 const Tropics = () => {
-  const loaderData = useLoaderData();
-  const tropics = loaderData?.data;
+  const tropics = useContext(TropicContext);
   return (
     <div>
       <div className="mt-20 grid lg:grid-cols-2 lg:gap-10 justify-items-center">
